@@ -35,7 +35,7 @@ const Home = () => {
     return (
         <main className="pt-5 mx-auto">
             <div className="container">
-                <AddTodoInput onCreate={addTodo} />
+                <AddTodoInput onAddTodo={addTodo} />
                 {todos.map((todo, index) => (
                     <TodoItem
                         todo={todo}
