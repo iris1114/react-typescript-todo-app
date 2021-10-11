@@ -36,15 +36,17 @@ const Home = () => {
         <main className="pt-5 mx-auto">
             <div className="container">
                 <AddTodoInput onAddTodo={addTodo} />
-                {todos.map((todo, index) => (
-                    <TodoItem
-                        todo={todo}
-                        key={uuid()}
-                        index={index}
-                        onToggleTodo={toggleTodo}
-                        onDeleteTodo={deleteTodo}
-                    />
-                ))}
+                {todos.map((todo, index) => {
+                    return (
+                        <TodoItem
+                            todo={todo}
+                            key={uuid()}
+                            index={index}
+                            onToggleTodo={toggleTodo}
+                            onDeleteTodo={deleteTodo}
+                        />
+                    );
+                })}
             </div>
         </main>
     );
