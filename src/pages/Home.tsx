@@ -5,11 +5,11 @@ import { v4 as uuid } from "uuid";
 
 const initialTodos: Todo[] = [
     {
-        text: "Lying on the bed",
+        text: "walk the dog",
         complete: true,
     },
     {
-        text: "Learn TypeScript",
+        text: "learn TypeScript",
         complete: false,
     },
 ];
